@@ -4,6 +4,8 @@
 
 """
 
+from app import add
 
-def add(a, b):
-    return a + b
+
+def test_app():
+    assert add(1, 3) == 4
