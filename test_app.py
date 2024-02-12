@@ -4,8 +4,11 @@
 
 """
 
-from app import add
+from app import add, subtract
 
 
 def test_app():
     assert add(1, 3) == 4
+
+def test_subtract():
+    assert subtract(4, 2) == 2
