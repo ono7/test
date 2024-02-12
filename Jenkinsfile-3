@@ -4,10 +4,7 @@ pipeline {
     stage('Test') {
       steps {
         sh '''
-        ansible --version
-        pytest --version
-        ls
-        pwd
+        pytest -v .
         '''
       }
     }
