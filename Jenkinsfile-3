@@ -4,9 +4,8 @@ pipeline {
     stage('Test') {
       steps {
         sh '''
-          node --version
-          git --version
-          curl --version
+        ansible --version
+        pytest --version
         '''
       }
     }
